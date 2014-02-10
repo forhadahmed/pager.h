@@ -1,3 +1,5 @@
+![Pager](http://forhadahmed.net/github/pager.png)
+
 ###### pager.h
 
 Simple pager for large output in CLI/text-based programs (C/C++).  Some programs which dump large amounts of text onto the console (such as `man ...` or `git log`) *automatically* page the output (using `more` or `less`) without the user having to pipe the output
