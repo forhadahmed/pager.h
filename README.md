@@ -11,18 +11,7 @@ By including `pager.h`, programs can achieve the same behavior by placing the `B
 
 Take an example program that prints 1000 lines of text.  Without paging, the user would easily miss most of the text since no terminal is ever 1000 lines high:
 
-```
-#include <stdio.h>
-
-int main() 
-{
-    int i;
-    
-    for (i = 1; i <= 1000; i++) {
-        printf("This is line #%d\n", i);
-    }
-}
-```
+![No pager example](http://forhadahmed.net/github/no-pager-code.png)
 
 Output on a terminal:
 
