@@ -4,7 +4,7 @@
 
 Simple pager for large output in CLI/text-based programs (C/C++).  Some programs which dump large amounts of text onto the console (such as `man ...` or `git log`) *automatically* page the output (using `more` or `less`) without the user having to pipe the output
 
-By including `pager.h`, a program can achieve the same behavior by placing the `BEGIN_PAGER` and `END_PAGER` macros around a piece of code that will print a large amount of text to `stdout`
+By including `pager.h`, programs can achieve the same behavior by placing the `BEGIN_PAGER` and `END_PAGER` macros around a piece of code that will print a large amount of text to `stdout`
 
 
 
