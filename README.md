@@ -1,4 +1,4 @@
-![Pager](http://forhadahmed.net/github/pager.png)
+![Pager](http://forhadahmed.net/github/pager-example.png)
 
 ###### pager.h
 
