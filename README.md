@@ -5,7 +5,7 @@ Simple pager for large output in CLI/text-based programs (C/C++).  Some programs
 
 ![Pager](http://forhadahmed.net/github/pager-example.png)
 
-------------------------
+==================
 
 Take an example program that prints 1000 lines of text.  
 
@@ -28,3 +28,10 @@ The output of this program run is automatically paged:
 ###### Fork
 
 The macros basically create a pipe between the running/parent process and a `fork()`-ed child (`more` or `less`) and redirect the parent's `stdout` to the child.  
+
+* While the child is running, `stdout` in closed on the parent (redirected to child)
+* When the child exits (`q` is pressed) `stdout` is restored on the parent.
+
+
+###### Caveats
+
