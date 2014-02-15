@@ -33,5 +33,8 @@ The macros basically create a pipe between the running/parent process and a `for
 * When the child exits (`q` is pressed) `stdout` is restored on the parent.
 
 
-###### Caveats
+###### Notes
+
+* pager.h installs a `SIGCHLD` handler to catch the termination of the child process
+* default pager is `more` but this can easily be changed in pager.h
 
