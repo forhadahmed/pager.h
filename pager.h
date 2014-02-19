@@ -2,7 +2,7 @@
 #include <signal.h>
 
 
-#define PAGER_INIT        \
+#define INIT_PAGER        \
     int pgp__ = 0;        \
     void pgk__(int s) {   \
     if (pgp__)            \
