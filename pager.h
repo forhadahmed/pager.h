@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <signal.h>
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+
+
+#ifndef Pagerh_H
+#define Pagerh_H
 
 #define INIT_PAGER        \
     int pgp__ = 0;        \
@@ -39,3 +46,8 @@ signal(SIGCHLD,pgk__);    \
     dup2(stdout__, 1);    \
     }
  
+#endif
+
+#ifdef __cplusplus
+}
+#endif
